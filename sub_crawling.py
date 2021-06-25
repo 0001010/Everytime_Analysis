@@ -7,8 +7,6 @@ from konlpy.tag import Kkma
 import openpyxl
 import pandas as pd
 
-if __name__ == '__main__':
-    main()
     
 id_pw = pd.read_csv('id_pw.csv',encoding = 'euc-kr')
 # 엑셀 작업화
