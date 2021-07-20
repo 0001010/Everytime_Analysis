@@ -81,7 +81,7 @@ with col1:
 
     while True:
         try:
-            embedding_model = KeyedVectors.load_word2vec_format('everytime_wtv')
+            embedding_model = KeyedVectors.load_word2vec_format('./model/everytime_wtv')
             sim = embedding_model.most_similar(positive=[values])
             sim = pd.DataFrame(sim).rename(columns={
                 0: 'Word',
